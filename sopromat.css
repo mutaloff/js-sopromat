@@ -1,0 +1,198 @@
+body{
+    margin:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(66, 66, 66);
+}
+@media (min-width : 1000px){
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: space-around;
+    }
+}
+.nav{
+    filter: none;
+    pointer-events: 'none';
+}
+.balk_len, .balk_support, .balk_force, .balk_load, .balk_moment, .balk_design, .img, .directory{
+    background-color: rgb(84, 84, 84);
+    margin: 10px;
+    border-radius: 10px;
+}
+#cnvs{
+    background-color: rgb(211, 214, 210);
+    image-rendering: pixelated;
+    width: 100%;
+    height: 1600px; 
+}
+#app-name{
+    text-align: center;
+    margin: 10px;
+}
+.main{
+    flex : 2;
+}
+.options{
+    flex : 1;
+    color: whitesmoke;
+}
+.options > div{
+    padding-left: 25px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+}
+.options p{
+    flex : 1;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: max-content;
+    margin-right: 25px;
+}
+.options button{
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: 100;
+    cursor: pointer;
+    margin-bottom: 5px;
+    outline: none;
+    padding-right: 5px;
+    text-align: center;
+}
+.options img:hover, .options button:hover{
+    opacity: 0.5;
+}
+.put_arrows{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+#force, #load, #moment{
+    padding-right: 15px;
+}
+img:hover{
+    cursor: pointer;
+}
+#output{
+    flex : 1;
+    color: whitesmoke;
+    justify-content: center;
+}
+input{
+    width: 50px;
+    border-radius: 8px;
+    text-align: center;
+    padding-left: 10px;
+    outline: none;
+}
+#output button{
+    border-radius: 12px;
+    background-color: whitesmoke;
+    border: thin;
+    outline: none;
+}
+#output button:hover{
+    background-color: red;
+    color: whitesmoke;
+}
+#output p{
+    padding: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px black;
+    justify-content: space-between;
+    flex-basis: max-content;
+}
+
+.balk_design button{ 
+    font-family: 'Times New Roman';
+    font-size: 12pt;
+ }
+.dropdown {
+    margin-right: 20px;
+    display: inline-block;
+    min-width: 180px;
+}
+#search_list{
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 150px;
+}
+#content {
+    margin-top: 8px;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+#content div{
+    padding: 5px 6px;
+    width: 100%;
+}
+#content div:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+#disclaimer{
+    height : 40%;
+    position: fixed;
+    top: 25%; right: 30%; left: 30%;
+    background-color: rgb(100, 100, 100);  
+    border-radius: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    display: none;
+}
+#disclaimer p{
+    margin: 5%;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-size: 18px;
+    word-wrap: break-word;
+    height: calc(90% - 60px);
+    text-overflow: ellipsis;
+}
+#accept{
+    padding-bottom: 5px;
+    font-size: 28px;
+    justify-self: center;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 35px;
+}
+#accept:hover{
+    font-size: 28px;
+    justify-self: center;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.directory a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.directory a:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+h2{
+    color: whitesmoke;
+    align-self: center;
+}
